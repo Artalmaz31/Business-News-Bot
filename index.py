@@ -3,8 +3,8 @@ import datetime
 from threading import Thread
 import telebot
 from telebot import types
-from src.database import add_user, get_users, update_advice, update_news
-from src.utils import get_advice, get_news, get_catalog_text
+from database import add_user, get_users, update_advice, update_news
+from utils import get_advice, get_news, get_catalog_text
 
 bot = telebot.TeleBot('5185239971:AAHiQNA37X6TlqgeDmVNPrFKzZWxHvrBe68')
 schedule = ([10, 13, 16, 19], [11, 14, 18], [12, 17], [15])
