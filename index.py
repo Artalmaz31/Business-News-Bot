@@ -33,7 +33,7 @@ def send_catalog():
             time_now = datetime.datetime.now(offset).hour
 
             if time_now in schedule[0]:
-                for id in []:
+                for id in users:
                     bot.send_message(id, get_catalog_text(0), parse_mode = 'Markdown')
                     time.sleep(60)
                     bot.send_message(id, get_catalog_text(1), parse_mode = 'Markdown')
